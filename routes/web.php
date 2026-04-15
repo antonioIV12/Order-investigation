@@ -8,4 +8,5 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
 
+Route::livewire('/investigations/create', 'pages::investigations.create')->name('Order-investigation');
 require __DIR__.'/settings.php';
