@@ -9,4 +9,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::livewire('/investigations/create', 'pages::investigations.create')->name('Order-investigation');
+Route::livewire('/investigations/orderEmailInvestigations/create', 'pages::investigations.without-order-id.create')->name('Order-email-investigation');
+Route::livewire('/investigations/integration-index', 'pages::investigations.slug-container')->name('integration-index');
+
+
+
 require __DIR__.'/settings.php';

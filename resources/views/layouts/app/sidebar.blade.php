@@ -12,11 +12,14 @@
 
             <flux:sidebar.nav>
                 <flux:sidebar.group :heading="__('Platform')" class="grid">
-                    <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Dashboard') }}
-                    </flux:sidebar.item>
                       <flux:sidebar.item icon="home" :href="route('Order-investigation')" :current="request()->routeIs('Order-investigation')" wire:navigate>
                         {{ __('Order-investigation') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="home" :href="route('Order-email-investigation')" :current="request()->routeIs('Order-email-investigation')" wire:navigate>
+                        {{ __('Order-email-investigation') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="home" :href="route('integration-index')" :current="request()->routeIs('integration-index')" wire:navigate>
+                        {{ __('integration-index') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
